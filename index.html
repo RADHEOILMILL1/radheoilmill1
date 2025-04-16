@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <title>રાધે ઓઈલ મિલ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #fffdf7;
+      overflow-x: hidden;
+    }
+
+    /* Landing Page Overlay */
+    #landing {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    #landing img {
+      width: 300px;
+      border-radius: 20px;
+      z-index: 2;
+    }
+
+    .dot {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.5;
+      animation: float 3s infinite ease-in-out;
+    }
+
+    .dot:nth-child(2) { top: 20%; left: 30%; animation-delay: 0s; }
+    .dot:nth-child(3) { top: 25%; right: 25%; animation-delay: 1s; }
+    .dot:nth-child(4) { bottom: 20%; left: 20%; animation-delay: 1.5s; }
+    .dot:nth-child(5) { bottom: 30%; right: 30%; animation-delay: 2s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); opacity: 0.5; }
+      50% { transform: translateY(-20px); opacity: 1; }
+    }
+
+    #startBtn {
+      margin-top: 40px;
+      padding: 15px 35px;
+      font-size: 18px;
+      background: #25D366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      z-index: 2;
+    }
+
+    #startBtn:hover {
+      background: #1ebc59;
+    }
+
+    #mainContent {
+      display: none;
+    }
+
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+    }
+
+    .button {
+      font-size: 15px;
+      background-color: black;
+      padding: 15px 35px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .product-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 30px;
+    }
+
+    .product-card {
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      padding: 15px;
+      background-color: white;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px 0;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebc59;
+    }
+
+    .contact {
+      font-size: 22px;
+      text-align: center;
+      line-height: 38px;
+      margin-bottom: 50px;
+    }
+
+    video {
+      width: 50%;
+      max-width: 800px;
+      display: block;
+      margin: 40px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Landing Section -->
+  <div id="landing">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <img style="align:center"; src="image11.jpg" alt="Radhe Oil Mill Team">
+    <button id="startBtn" onclick="startWebsite()">START</button>
+  </div>
+
+  <!-- Main Website Content -->
+  <div id="mainContent">
+    <div style="text-align:center; margin-top:35px;">
+        <img src="image11.jpg" alt="Radhe Oil Mill Banner" style="max-width: 90%; border-radius: 12px;">
+    </div>
+
+
+    <p>રાધે ઓઈલ મિલ માં, અમે 100% શુદ્ધ, કેમિકલ-ફ્રી તેલ પ્રદાન કરીએ છીએ,<br>
+      જે દરેક બોટલ સાથે શ્રેષ્ઠ સ્વાદ અને સ્વાસ્થ્યલાભ આપે છે. અમારું તેલ શ્રેષ્ઠ ગુણવત્તાવાળા ઘટકોમાંથી કૂલ્ડ-પ્રેસ કરવામાં આવે છે,<br>
+      જે મહિના સુધી તાજગી જાળવે છે.<br><br>
+      અમે શુદ્ધ નેચરલ તેલ પ્રદાન કરવા માટે પ્રતિબદ્ધ છીએ,<br>
+      જેમાં કોઈપણ એડિટિવ્સ ન હોય. ફ્રી હોમ ડિલિવરી સાથે,<br>
+      રાધે ઓઈલ મિલ ને તમારા રસોડે પ્રકૃતિની સારો લાવવાનો આત્મવિશ્વાસ છે.
+    </p>
+
+    <div style="text-align:center;">
+      <a class="button" href="readmore.html">READ MORE</a>
+    </div>
+
+    <h1>અમારા પ્રોડક્ટ્સ</h1>
+
+    <div class="product-container">
+      <div class="product-card">
+        <img src="image1.jpeg" alt="Product 1">
+        <h3>સિંગતેલ 15kg</h3>
+        <p><del style="color: gray;">₹3000</del> <strong style="color: green;">₹2950</strong></p>
+      </div>
+      <div class="product-card">
+        <img src="image2.jpeg" alt="Product 2">
+        <h3>નરિયેળ તેલ 1L</h3>
+        <p><del style="color: gray;">₹1000</del> <strong style="color: green;">₹950</strong></p>
+      </div>
+      <div class="product-card">
+        <img src="image3.jpeg" alt="Product 3">
+        <h3>તલતેલ 1L</h3>
+        <p><del style="color: gray;">₹220</del> <strong style="color: green;">₹200</strong></p>
+      </div>
+    </div>
+
+    <video src="vidio.mp4" controls></video>
+
+     <div class="contact">
+        <p><strong>ભરતભાઈ આર. જીંજાળા (સુરત ડેપો)</strong> – 📞 98791 22857</p>
+        <p><strong>આર. આર. જીંજાળા (સુરત)</strong> – 📞 98255 27424</p>
+        <p><strong>પ્રદીપભાઈ જી. જીંજાળા (દેવલી)</strong> – 📞 99781 24139</p>
+        <p><strong>રમેશભાઈ પી. જીંજાળા (દેવલી)</strong> – 📞 99131 37834</p>
+        <p><strong>WhatsApp ઓર્ડર:</strong> <a href="https://wa.me/919978124139" target="_blank" style="color: green; font-weight: bold;">99781 24139</a></p>
+        <p>સુરત – 98791 22857 | વડોદરા – 63546 73669</p>
+      <div style="margin-top: 25px;">
+        <a href="https://wa.me/919978124139" target="_blank" class="whatsapp-button">
+          WhatsApp ઓર્ડર કરો
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript to Show Website -->
+  <script>
+    function startWebsite() {
+      document.getElementById('landing').style.display = 'none';
+      document.getElementById('mainContent').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
